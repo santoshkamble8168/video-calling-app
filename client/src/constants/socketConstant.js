@@ -1,0 +1,5 @@
+export const JOIN_ROOM = "room:join"
+export const USER_JOINED = "user:joined"
+export const USER_CALL = "user:call"
+export const INCOMMING_CALL = "incomming:call"
+export const CALL_ACCEPTED = "call:accepted"

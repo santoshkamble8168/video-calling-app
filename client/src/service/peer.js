@@ -1,14 +1,16 @@
 class PeerService {
-    constructor(){
+    constructor() {
         if (!this.peer) {
             this.peer = new RTCPeerConnection({
-                iceServers:[{
-                    urls: [
-                        "stun:stun.l.google.com:19302",
-                        "stun:global.stun.twilio.com:3478"
-                    ]
-                }]
-            })
+                iceServers: [
+                    {
+                        urls: [
+                            "stun:stun.l.google.com:19302",
+                            "stun:global.stun.twilio.com:3478",
+                        ],
+                    },
+                ],
+            });
         }
     }
 
@@ -36,4 +38,4 @@ class PeerService {
     }
 }
 
-export default new PeerService
+export default new PeerService();
